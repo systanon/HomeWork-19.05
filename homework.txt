@@ -1,0 +1,63 @@
+                                    hm 1 
+                                  question1
+
+let n = prompt("Введите целое число","");                                 
+ if (n>0){
+     alert('good')   
+ }else{
+  alert('bad')
+ }
+
+// 2 sposob
+let n = prompt("Введите целое число");
+(n>0)? alert("good") : alert("bad");
+----------------------------------------------------------------------------------------------------
+
+                                    question2
+
+
+let arr = [5,10,15,20,25,30,35,40,45,50]
+
+let result = arr.reduce(function(sum, current) {
+  return sum + current;
+}, 0);
+console.log(result);
+------------------------------------------------------------------------------------------------------
+                                   question3
+
+
+let numbers = [ 254, 115, 78, 25, 91, 45, 37 ];
+  
+let isHightFifty = numbers.filter(function(number) {
+  return number > 50;
+});
+console.log(isHightFifty);
+                                    hm2
+                                  question 1
+
+function fun(n){
+  if (n instanceof Number || typeof n == "number") return new Date();
+  return "Неверный тип данных";
+}
+fun();
+-----------------------------------------------------------------------------------------------------------------
+                                  question3
+
+<plaintext>Текст</plaintext>
+function testUserText ( userText ) {
+  return "<plaintext>" + userText + "</plaintext>";
+}
+
+
+                                hm 4
+                              question1
+                            
+
+var womenBag = {
+    item:'lipstick',
+    item2: 'hairbrush',
+    item3: 'mirror' 
+}
+delete womenBag.item
+womenBag['item44'] = 'condoms'
+---------------------------------------------------------------------------------
