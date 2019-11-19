@@ -5,5 +5,5 @@ request.onreadystatechange = function (event) {
 			console.warn('request error') :
 				null
 }
-request.open('GET','./user.json')
+request.open('GET','./user2.json')
 request.send()
