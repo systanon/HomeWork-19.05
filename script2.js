@@ -14,6 +14,7 @@ function getData (url,callback) {
   request.send()
 }
 var func = function (response) {
+  console.log('success')
   console.log(response)
 }
 
