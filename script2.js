@@ -8,4 +8,4 @@ var request = Object.assign(
     }
   }
 )
-request.open("GET","./json2")
+request.open("GET","./user2.json")
