@@ -13,9 +13,22 @@ function getData (url,callback) {
   request.open("GET",url)
   request.send()
 }
-var func = function (response) {
-  console.log('success')
-  console.log(response)
+
+function showMarkup (html) {
+  document.body.innerHTML += html
 }
 
-getData("./user2.json",func)
+function showText (text) {
+  document.body.innerHTML += `<h3>${text}</h3>`
+}
+
+var showGallery = function (response) {
+  pictures = JSON.parse(response)
+  pictures.forEach(
+     picture => document.body.appendChild(document.createElement('img')).src = picture.ref
+  )
+}
+
+getData("./user2.json",showGallery)
+getData("hello.txt",showText)
+getData("hello.html",showMarkup)
